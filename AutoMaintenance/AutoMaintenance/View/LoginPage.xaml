@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AutoMaintenance.LoginPage">
+	<ContentPage.Padding>
+		<OnPlatform x:TypeArguments="Thickness"
+					 iOS="20,40,20,20"	
+					 Android="20,20,20,20"	
+					 WinPhone="20,20,20,20"/>	
+	</ContentPage.Padding>
+	<ContentPage.Content>		
+	 	<StackLayout Orientation="Vertical">
+	 		<Entry x:Name="userName" Placeholder="User Name"></Entry>
+	 		<Entry x:Name="password" Placeholder="Password"></Entry>
+	 		<Button x:Name="buttonLogin" Text="Sign In" Clicked="OnClick_Login"></Button>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:local="clr-namespace:AutoMaintenance;assembly=AutoMaintenance"
+	x:Class="AutoMaintenance.DashboardPage">
+	<TabbedPage.Children>
+		<local:OilChangePage></local:OilChangePage>
+		<local:TagChangePage></local:TagChangePage>
+		<local:TireChangePage></local:TireChangePage>
+	</TabbedPage.Children>
+</TabbedPage>
