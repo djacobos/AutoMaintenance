@@ -6,11 +6,18 @@
 					 Android="20,20,20,20"	
 					 WinPhone="20,20,20,20"/>	
 	</ContentPage.Padding>
-	<ContentPage.Content>		
-	 	<StackLayout Orientation="Vertical">
+	<ContentPage.Content>
+	 	<StackLayout Orientation="Vertical"  Padding="0,50,0,0">
+	 		<Label x:Name="errorMessage" TextColor="#f44336" HorizontalOptions="Center"></Label>
 	 		<Entry x:Name="userName" Placeholder="User Name"></Entry>
 	 		<Entry x:Name="password" Placeholder="Password"></Entry>
-	 		<Button x:Name="buttonLogin" Text="Sign In" Clicked="OnClick_Login"></Button>
+
+		 	<StackLayout Orientation="Horizontal"  Padding="0,10,0,0" x:Name="loginStackLayout" HorizontalOptions="StartAndExpand">
+				<Button x:Name="buttonRegister" Text="Create New Account" Clicked="OnClick_Register"></Button>
+				<Button x:Name="buttonLogin" Text="Sign In" Clicked="OnClick_Login" HorizontalOptions="EndAndExpand" ></Button>
+			</StackLayout>
+	 		
 		</StackLayout>
+
 	</ContentPage.Content>
 </ContentPage>
