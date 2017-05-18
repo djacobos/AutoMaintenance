@@ -7,9 +7,13 @@ namespace AutoMaintenance
 {
 	public partial class TagChangePage : ContentPage
 	{
-		public TagChangePage ()
+		private MaintenanceRepository _database;
+		public TagChangePage (MaintenanceRepository database)
 		{
 			InitializeComponent ();
+			_database = database;
+			this.BindingContext = _database;//new OilChangeViewModel ();
+
 		}
 	}
 }

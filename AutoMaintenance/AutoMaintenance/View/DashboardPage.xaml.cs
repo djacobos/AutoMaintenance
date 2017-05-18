@@ -7,9 +7,12 @@ namespace AutoMaintenance
 {
 	public partial class DashboardPage : TabbedPage
 	{
-		public DashboardPage ()
+		public DashboardPage (MaintenanceRepository database)
 		{
 			InitializeComponent ();
+			this.Children.Add (new OilChangePage (database));
+			this.Children.Add (new TagChangePage (database));
+			this.Children.Add (new TireChangePage (database));
 		}
 	}
 }

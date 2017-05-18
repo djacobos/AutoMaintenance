@@ -4,9 +4,9 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 	xmlns:local="clr-namespace:AutoMaintenance;assembly=AutoMaintenance"
 	x:Class="AutoMaintenance.DashboardPage">
-	<TabbedPage.Children>
+<!--	<TabbedPage.Children>
 		<local:OilChangePage></local:OilChangePage>
 		<local:TagChangePage></local:TagChangePage>
 		<local:TireChangePage></local:TireChangePage>
-	</TabbedPage.Children>
+	</TabbedPage.Children>-->
 </TabbedPage>

@@ -15,8 +15,7 @@ namespace AutoMaintenance.Droid
 		{
 			var sqliteFilename = "AutoMaintenance.db3";
 			var documentsPath = Environment.GetFolderPath (Environment.SpecialFolder.Personal);
-			var libraryPath = Path.Combine (documentsPath, "..", "Library");
-			var path = Path.Combine (libraryPath, sqliteFilename);
+			var path = Path.Combine (documentsPath, sqliteFilename);
 
 			var connection = new SQLiteConnection (path);
 

@@ -7,9 +7,13 @@ namespace AutoMaintenance
 {
 	public partial class TireChangePage : ContentPage
 	{
-		public TireChangePage ()
+		private MaintenanceRepository _database;
+		public TireChangePage (MaintenanceRepository database)
 		{
 			InitializeComponent ();
+			_database = database;
+			this.BindingContext = _database;//new OilChangeViewModel ();
+
 		}
 	}
 }

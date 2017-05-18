@@ -24,7 +24,8 @@ namespace AutoMaintenance
 				userPassCombination = false;
 
 			if (userPassCombination) {
-				Navigation.PushAsync (new DashboardPage());
+				var database = new MaintenanceRepository ();
+				Navigation.PushAsync (new DashboardPage(database));
 			}
 
 

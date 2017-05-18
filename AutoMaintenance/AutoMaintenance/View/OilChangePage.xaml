@@ -1,5 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AutoMaintenance.OilChangePage" Title="Oil Change">
+<ContentPage 
+xmlns="http://xamarin.com/schemas/2014/forms" 
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+x:Class="AutoMaintenance.OilChangePage" 
+Title="Oil Change">
+
 	<ContentPage.Content>
+	<StackLayout>
+		<ActivityIndicator></ActivityIndicator>
+		<Button Text="Add" x:Name="buttonAddOildChange" Clicked="OnClick_AddOilChange"/>
+        <ListView  x:Name="listView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout BackgroundColor="#eee"
+                        Orientation="Vertical">
+                            <StackLayout Orientation="Horizontal">
+<!--                                <Image Source="{Binding image}" />-->
+                                <Label Text="{Binding Vehicle}"
+                                TextColor="#f35e20" />
+                                <Label Text="{Binding Notes}"
+                                HorizontalOptions="EndAndExpand"
+                                TextColor="#503026" />
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+	</StackLayout>
 	</ContentPage.Content>
 </ContentPage>
